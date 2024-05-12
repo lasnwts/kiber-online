@@ -1,5 +1,10 @@
 HELP.md
 target/
+log/
+logs/
+temp/
+tmp/
+.idea/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -12,6 +17,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.gitignore
 
 ### IntelliJ IDEA ###
 .idea

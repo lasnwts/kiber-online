@@ -1,0 +1,33 @@
+<!doctype html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{fragment/layouts/base_layout}">
+<head>
+    <title>Pricing demo</title>
+</head>
+<body>
+
+<section layout:fragment="content">
+
+<h4>Pricing..</h4>
+
+    <table class="table table-striped-columns">
+        <thead>
+        <tr>
+            <th>Item Number</th>
+            <th>Name of Description</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="priceItem : ${prices}">
+            <td th:text="${priceItem.getProductNumber()}"></td>
+            <td th:text="${priceItem.getProductName()}"></td>
+            <td th:text="${priceItem.getPrice()}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+</body>
+</html>

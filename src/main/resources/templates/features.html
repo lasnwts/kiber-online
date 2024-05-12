@@ -1,0 +1,19 @@
+<!doctype html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+       layout:decorate="~{fragment/layouts/base_layout}">
+<head>
+    <title>Features demo</title>
+</head>
+<body>
+
+<section layout:fragment="content">
+
+<h4> Features page</h4>
+
+    <div th:each="feature : ${features}">
+        <div th:text="${feature}"></div>
+    </div>
+</section>
+</body>
+</html>
